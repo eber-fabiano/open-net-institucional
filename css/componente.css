@@ -1,5 +1,5 @@
 .logo-empresa {    
-    float: left;    
+    display: block;
     width: 139px;    
     height: 87px;
     margin-top: 5px;
@@ -7,46 +7,54 @@
     background-repeat: no-repeat;
 }
 
-.menu {
-    float: left;        
-    list-style: none;
-    
-    margin: 0 150px;    
-    padding: 0;            
-    
-    line-height: 97px;
+.right {
+    text-align: right;
 }
 
-.menu__item {        
-    display: inline-block;
-    margin: 0px 20px;    
-    width: 90px;
-    text-align: center;
+.menu {    
+    display: none;
 }
 
-.menu__item::after {
-    display: block;
-    position: relative;
-    content: '';
-    background: #f00;
-    left: 0;
-    bottom: 2px;
-    width: 0;
-    height: 2px;
-    -webkit-transition: all .4s;
-    transition: all .4s;
+@media (min-width: 768px) {
+    .menu {
+        display: inline-block;
+        list-style: none;    
+        margin: 0;    
+        padding: 0;                
+        line-height: 97px;
+    }
+
+    .menu__item {        
+        display: inline-block;    
+        width: 95px;
+        text-align: center;
+    }
+
+    .menu__item a {   
+        display: block; 
+        text-decoration: none;
+        color: #000;        
+    }
+
+    .menu__item::after {
+        display: block;
+        position: relative;
+        content: '';
+        background: #f00;
+        left: 0;
+        bottom: 2px;
+        width: 0;
+        height: 2px;
+        -webkit-transition: all .4s;
+        transition: all .4s;
+    }
+
+    .menu__item:hover::after {
+        width: 100%;
+    }
+
+    .menu__item:hover  {
+        font-weight: bold;
+    }
 }
 
-.menu__item:hover::after {
-    width: 100%;
-}
-
-.menu__item a {    
-    text-decoration: none;
-    color: #000;
-    line-height: 97px;
-}
-
-.menu__item:hover {
-    font-weight: bold;
-}
