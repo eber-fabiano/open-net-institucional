@@ -7,6 +7,15 @@
     background-repeat: no-repeat;
 }
 
+.botao-chaveador {
+    margin-top: 36.5px;
+    width: 24px;
+    height: 24px;    
+    background-image: url(../imagens/bars.png);
+    background-repeat: no-repeat;
+    border: 0;
+}
+
 .right {
     text-align: right;
 }
@@ -16,6 +25,10 @@
 }
 
 @media (min-width: 768px) {
+    .botao-chaveador {
+        display: none;
+    }
+
     .menu {
         display: inline-block;
         list-style: none;    
