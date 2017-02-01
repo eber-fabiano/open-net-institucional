@@ -3,12 +3,17 @@
     border-bottom: 1px solid #ccc;
 }
 
+.layout-contato {
+    margin-top: 500px;
+    padding-top: 100px;    
+    border-top: 1px solid #ccc;       
+}
+
 .layout-rodape {
     height: 65px;
     color: #fff;    
     font-size: 1rem;
-    text-align: center;    
-    margin-top: 500px;
+    text-align: center;        
     padding: 18px 0 0 0;
     background-color: #f00;    
 }

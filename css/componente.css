@@ -64,3 +64,34 @@
         text-align: right;
     }   
 }
+
+.contato-informacao {
+    padding-bottom: 50px;
+}
+
+.contato-informacao ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    line-height: 40px;    
+}
+.contato-informacao__icone {
+    display: inline-block;     
+    width: 18px; 
+    height: 30px;         
+    margin-right: 10px;    
+    margin-bottom: -18px;
+    background-repeat: no-repeat;       
+}
+
+.contato-informacao__icone--telefone {
+    background-image: url(../imagens/phone-icon.svg);
+}
+
+.contato-informacao__icone--email {
+    background-image: url(../imagens/email-icon.svg);
+}
+
+.contato-informacao__icone--endereco {
+    background-image: url(../imagens/address-icon.svg);
+}
