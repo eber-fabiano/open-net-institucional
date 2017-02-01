@@ -5,16 +5,10 @@
 
 .layout-rodape {
     height: 65px;
-    line-height: 65px;
-    color: #fff;
-    font-size: 0.8rem;
-    text-align: center;
+    color: #fff;    
+    font-size: 1rem;
+    text-align: center;    
     margin-top: 500px;
+    padding: 18px 0;
     background-color: #f00;    
-}
-
-@media (min-width: 768px) {
-    .layout-rodape {
-        font-size: 1.2rem;
-    }
 }
