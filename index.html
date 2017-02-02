@@ -14,16 +14,23 @@
         <header class="layout-cabecalho">
             <div class="container">
                 <div class="row">                    
-                    <div class="col-xs-12  col-sm-1">
+                    <div class="col-xs-6  col-sm-1">
                         <a href="/" class="logo-empresa"></a>                
                     </div>                           
-                    <div class="col-xs-12  col-sm-11">
-                        <ul class="menu">
-                            <li class="menu__item"><a href="#">Institucional</a></li>
-                            <li class="menu__item"><a href="#">Soluções</a></li>
-                            <li class="menu__item"><a href="#contato">Contato</a></li>
-                            <li class="menu__item"><a href="http://acesso.opennetonline.com.br:8080/webrun/logon.jsp?sys=SOP&msgKey=" target="_blank">OS Web</a></li>
-                            <li class="menu__item"><a href="http://www.nfeavulsa.com.br" target="_blank">NF-e Avulsa</a></li>
+                    <div class="col-xs-6  col-sm-11">
+                        <button class="botao__menu  js-botao-menu">
+                            <ul>
+                                <li></li>
+                                <li></li>
+                                <li></li>                                
+                            </ul>
+                        </button>
+                        <ul class="menu  menu--exibindo  js-menu">
+                            <li class="menu__item" onclick="menuitemclick()"><a href="#">Institucional</a></li>
+                            <li class="menu__item" onclick="menuitemclick()"><a href="#">Soluções</a></li>
+                            <li class="menu__item" onclick="menuitemclick()"><a href="#contato">Contato</a></li>
+                            <li class="menu__item" onclick="menuitemclick()"><a href="http://acesso.opennetonline.com.br:8080/webrun/logon.jsp?sys=SOP&msgKey=" target="_blank">OS Web</a></li>
+                            <li class="menu__item" onclick="menuitemclick()"><a href="http://www.nfeavulsa.com.br" target="_blank">NF-e Avulsa</a></li>
                         </ul>            
                     </div>
                 </div>    
@@ -66,5 +73,7 @@
                 &copy; 2017 - Todos os direitos reservados.                               
             </div>
         </footer>
+
+        <script src="javascript/app.js"></script>
     </body>
 </html>

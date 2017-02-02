@@ -1,4 +1,3 @@
-
 .right {
     float: right;
 }
@@ -10,6 +9,27 @@
     margin: 5px 0;
     background-image: url(../imagens/logo.png);
     background-repeat: no-repeat;
+}
+
+.botao__menu {
+    float: right;
+    margin-top: 30px;
+    border-radius: 2px;
+    background: none;
+    border: 1px solid #ccc;    
+}
+
+.botao__menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.botao__menu li {
+    width: 30px;    
+    margin-top: 6px;
+    margin-bottom: 6px;        
+    border-bottom: 3px solid #ccc;
 }
 
 .menu {
@@ -28,6 +48,10 @@
     padding: 110px 20px;
     background-color: #ccc;       
     border-radius: 0 10px 10px 0;
+}
+
+.menu--exibindo {
+    display: none;
 }
 
 .menu__item {            
@@ -62,7 +86,12 @@
 }  
 
 @media (min-width: 768px) {
-    .menu {                           
+    
+    .botao__menu {
+        display: none;
+    }
+
+    .menu {                
         position: static;
         float: right;                
         width: 491px;            
@@ -70,6 +99,10 @@
         line-height: 97px;        
         opacity: 1; 
         background: none;        
+    }
+
+    .menu--exibindo {
+        display: inline-block;
     }
 
     .menu__item {        
