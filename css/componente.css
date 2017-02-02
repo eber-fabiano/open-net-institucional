@@ -49,10 +49,13 @@
     padding: 110px 20px;
     background-color: #ccc;       
     border-radius: 0 10px 10px 0;
+    -webkit-transition: all .4s;
+    transition: all .4s;
 }
 
-.menu--exibindo {
-    display: none;
+.menu--exibindo {    
+    width: 0;
+    padding: 0;
 }
 
 .menu__item {            
@@ -95,11 +98,10 @@
     .menu {                
         position: static;
         float: right;                
-        width: 491px;            
-        padding: 0;
+        width: 491px;                    
         line-height: 97px;        
         opacity: 1; 
-        background: none;        
+        background: none;  
     }
 
     .menu--exibindo {
