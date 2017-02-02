@@ -1,3 +1,4 @@
+
 .right {
     float: right;
 }
@@ -6,30 +7,32 @@
     display: block;
     width: 139px;    
     height: 87px;    
+    margin: 5px 0;
     background-image: url(../imagens/logo.png);
     background-repeat: no-repeat;
 }
 
-.logo-empresa--posicao {
-    margin: 5px auto;
-}
-
 .menu {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+
     list-style: none;    
-    margin: 0;    
-    padding: 0;                
-    line-height: 97px;
-    font-size: 1.4rem;
+    margin: 0;               
+    line-height: 50px;         
+    font-size: 1.4rem; 
+    
+    opacity: 0.9;
+    width: 200px;    
+    background-color: #ccc;       
+    z-index: 9999;    
+    border-radius: 0 10px 10px 0;
+    padding: 110px 20px;
 }
 
-.menu--posicao {
-    text-align: center;
-}
-
-.menu__item {        
-    display: inline-block;    
+.menu__item {            
     width: 95px;
-    text-align: center;
 }
 
 .menu__item a {   
@@ -44,29 +47,37 @@
     content: '';
     background: #f00;
     left: 0;
-    bottom: -1px;
+    bottom: 1px;
     width: 0;
     height: 2px;
     -webkit-transition: all .4s;
     transition: all .4s;
 }
 
-.menu__item:hover::after {
-    width: 100%;
-}
-
 .menu__item:hover  {
     font-weight: bold;
-}
+}   
+
+.menu__item:hover::after {
+    width: 100%;
+}  
 
 @media (min-width: 768px) {
-    .logo-empresa--posicao {
-        margin: 5px 0;
-    }   
+    .menu {           
+        display: inline;
+        position: static;              
+        
+        
+        padding: 0;
+        background: none;
+        line-height: 97px;        
+        opacity: 1;                
+    }
 
-    .menu--posicao {
-        text-align: right;
-    }   
+    .menu__item {        
+        display: inline-block;            
+        text-align: center;
+    }  
 }
 
 .contato-informacao, .fale-conosco {
