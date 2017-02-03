@@ -13,6 +13,7 @@
 
 .botao__menu {
     float: right;
+    padding: 5px 10px 9px 10px;
     margin-top: 30px;
     border-radius: 2px;
     background: none;
@@ -20,17 +21,13 @@
     outline: none;
 }
 
-.botao__menu ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.botao__menu li {
-    width: 30px;    
-    margin-top: 6px;
-    margin-bottom: 6px;        
-    border-bottom: 3px solid #ccc;
+.botao__menu span {
+    display: block;
+    width: 22px;    
+    height: 2px;    
+    border-radius: 1px;
+    margin-top: 4px;
+    background-color: #ccc;
 }
 
 .menu {
